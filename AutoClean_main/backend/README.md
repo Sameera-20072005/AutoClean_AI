@@ -4,7 +4,7 @@ FastAPI provides real file validation, deterministic CSV profiling, and a narrow
 
 ## Run on Windows
 
-Run these commands from the repository root (`AutoClean-AI-Website`, the directory containing `backend`):
+Run these commands from `AutoClean_main/`, the directory containing `backend`:
 
 ```powershell
 py -3.11 -m venv .venv

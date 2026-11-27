@@ -9,7 +9,7 @@ AutoClean AI is a phased data quality prototype. The frontend includes Home, Das
 
 ## Run locally
 
-From this project directory, install frontend dependencies and start Vite:
+From `frontend/`, install frontend dependencies and start Vite:
 
 ```powershell
 npm install
@@ -18,7 +18,7 @@ npm run dev
 
 Open the URL printed by Vite (normally `http://localhost:5173`). The app can be used without the backend; its home page reports whether the FastAPI health endpoint is reachable.
 
-In a second PowerShell window, create a virtual environment and start FastAPI:
+In a second PowerShell window, change to the parent `AutoClean_main/` directory, then create a virtual environment and start FastAPI:
 
 ```powershell
 py -3.11 -m venv .venv
@@ -29,7 +29,7 @@ python -m uvicorn backend.app.main:app --reload --port 8000
 
 Run backend and frontend checks with `python -m pytest backend\tests -q --basetemp=.pytest-tmp`, `npm test`, and `npm run build`.
 
-If Python 3.11 is not installed, use `py -m venv .venv` with the available Python version. Open the API at `http://127.0.0.1:8000/docs`. The frontend health card reads `http://localhost:8000`; set `VITE_API_URL` in a local `.env` file to use another backend URL.
+If Python 3.11 is not installed, use `py -m venv .venv` with the available Python version. Open the API at `http://127.0.0.1:8000/docs`. The frontend health card reads `http://localhost:8000`; set `VITE_API_URL` in `frontend/.env` to use another backend URL.
 
 ## Model integration point
 
