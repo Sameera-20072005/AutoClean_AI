@@ -29,6 +29,12 @@ app.add_middleware(
 )
 
 
+@app.get("/", include_in_schema=False)
+def root_health():
+    """Expose the API health status at the service's base URL."""
+    return health.health()
+
+
 @app.exception_handler(RequestValidationError)
 async def request_validation_error(_: Request, exc: RequestValidationError):
     messages = [item.get("msg", "Invalid request") for item in exc.errors()]

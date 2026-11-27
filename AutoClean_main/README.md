@@ -39,7 +39,7 @@ Copy-Item backend\.env.example .env
 python -m uvicorn backend.app.main:app --reload --port 8000
 ```
 
-The API is available at `http://127.0.0.1:8000`. Open `http://127.0.0.1:8000/docs` for the interactive API documentation. Its health endpoint is `http://127.0.0.1:8000/api/health`.
+The API is available at `http://127.0.0.1:8000`. Its root URL and `/api/health` both return the health status. Open `http://127.0.0.1:8000/docs` for the interactive API documentation.
 
 ### 2. Start the frontend
 
