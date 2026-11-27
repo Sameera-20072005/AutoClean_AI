@@ -1,0 +1,8 @@
+.home-service-status{display:grid;gap:0;border:1px solid #e9edf4;border-radius:10px;background:#fff;overflow:hidden}
+.home-service-row{min-height:48px;padding:0 14px;display:flex;align-items:center;justify-content:space-between;gap:14px;border-bottom:1px solid #eef0f5}
+.home-service-row:last-child{border-bottom:0}
+.home-service-name{font-size:12px;font-weight:600;color:#35415a}
+.home-service-value{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:600}
+.home-service-value.ready{color:#25936d}.home-service-value.initializing{color:#bd8629}.home-service-value.unavailable{color:#c64e55}
+.home-service-note{margin:10px 1px 0;color:#8993a6;font-size:10px}
+@media(max-width:760px){.home-service-row{min-height:46px}}

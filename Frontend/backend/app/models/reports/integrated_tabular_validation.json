@@ -1,0 +1,15 @@
+{
+    "project": "AutoClean AI",
+    "stage": "Integrated tabular validation",
+    "test_rows": 114,
+    "numeric_features": 30,
+    "predicted_clean_cells": 3258,
+    "predicted_missing_cells": 107,
+    "predicted_outlier_cells": 55,
+    "repair_operations": 162,
+    "remaining_missing_values": 0,
+    "target_unchanged": false,
+    "overall_mae_before": 4.4294741774826445,
+    "overall_mae_after": 3.2511864983187135,
+    "overall_error_improved": true
+}

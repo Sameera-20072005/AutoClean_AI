@@ -1,0 +1,23 @@
+{
+    "project": "AutoClean AI",
+    "module": "Tabular ADDA, ADRA and ARVA",
+    "dataset": "UCI Breast Cancer Wisconsin Diagnostic",
+    "train_rows": 455,
+    "test_rows": 114,
+    "features": 30,
+    "defect_detection": {
+        "accuracy": 0.9950292397660818,
+        "macro_f1": 0.9537950058965287,
+        "actual_missing_cells": 107,
+        "actual_outlier_cells": 70,
+        "predicted_missing_cells": 107,
+        "predicted_outlier_cells": 55
+    },
+    "repair_validation": {
+        "missing_value_mae": 17.124456046728973,
+        "outlier_mae_before": 209.64068500000002,
+        "outlier_mae_after_adra": 132.66752879285715,
+        "outlier_mae_median_baseline": 6.384103214285715,
+        "outlier_error_reduction_percent": 36.716707068164204
+    }
+}
