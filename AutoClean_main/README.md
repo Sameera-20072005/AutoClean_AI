@@ -34,8 +34,9 @@ In the first terminal, create and activate a Python environment, install the bac
 ```powershell
 py -3.11 -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python -m pip install -r backend\requirements.txt
+python -m pip install -r .\AutoClean_main\backend\requirements.txt
 Copy-Item backend\.env.example .env
+cd .\AutoClean_main
 python -m uvicorn backend.app.main:app --reload --port 8000
 ```
 
